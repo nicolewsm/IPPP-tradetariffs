@@ -21,20 +21,11 @@ df = pd.DataFrame
 df = df.from_dict(d)
 df2 = df.loc[df['isReporter'] == '1']
 
-df_allgdp = pd.read_csv("gdp2.csv", index_col = "Country Name",
-                    usecols = ["Country Name", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003",
-                              "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015",
-                              "2016"])
-
-df_region = pd.read_csv("region.csv", index_col = "TableName", usecols = ["TableName", "Region", "IncomeGroup"])
-df_region.index.names = ['Country Name']
-
-df_gdp = df_region.join(df_allgdp)
-df_gdp = df_gdp.loc[(df_gdp['Region'] == 'Latin America & Caribbean')]
-df_gdp = df_gdp.drop(["Region", "IncomeGroup"], axis = 1)
+df_region = pd.read_csv("region.csv", index_col = "TableName", usecols = ["TableName", "Region", "IncomeGroup", "Country Code"])
+df_region.index.names = ['ctryname']
+df_region = df_region.loc[(df_region['Region'] == 'Latin America & Caribbean')]
 
 latam_fulllist = pd.DataFrame()
-latam_fulllist['ctryname'] = df_gdp.index.values
-df_latam = df2.merge(latam_fulllist)
-latam = df_latam['ctryname'].tolist()
-latam_codes = df_latam['ctrycode'].tolist()
+latam_fulllist['ctryname'] = df_region.index.values
+df_latam = latam_fulllist.merge(df2)
+df_latam.to_csv('latamctrycodes_list.csv')

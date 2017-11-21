@@ -1,5 +1,4 @@
-#!/usr/bin/env/python
-
+#!/usr/bin/env python
 
 import pandas as pd
 
@@ -42,11 +41,12 @@ for ctrycode in latam:
         percent = percent.reset_index(drop=True)
 
         #the problem starts from here onwards.
-        ctrytariffs['ctry'] = ctrycode
+        ctrytariffs['ctrycode'] = ctrycode
         ctrytariffs[product + '_tariff'] = temp[product]
         ctrytariffs[product + '_delta']= delta['delta']
         ctrytariffs[product + '_%change']= percent['%change']
 
-    master = master.append(ctrytariffs)
 
-master.to_csv("master_tariffs.csv")
+    master = master.append(ctrytariffs)
+master["ctryyear"] = master["ctrycode"].map(str) + master["year"]
+master.to_csv("latam_tariffs.csv")
