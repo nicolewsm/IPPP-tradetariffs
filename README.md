@@ -12,6 +12,8 @@ downloaded from WorldBank:
   -- We merge region with each of the preceding economic indicator csv's
   -- Then from there, we .loc the LatAm countries.  
 
+**NOTE:  Run the following codes in order!**
+
 listofreportingLatamCountries.py
 - creates 'latamctrycodes_list.csv'
   - this should be our master list of all LatAm countries that report data to WITS
@@ -28,7 +30,6 @@ economicindicators.py
   - unemployment rates
   - inflation rates
 - contains the rates as mentioned, their y-o-y deltas and %pct_change
-
 
 tariffs.py
 **NOTE: Takes some 10-20seconds to run.***

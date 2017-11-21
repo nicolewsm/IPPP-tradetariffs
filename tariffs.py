@@ -50,3 +50,5 @@ for ctrycode in latam:
     master = master.append(ctrytariffs)
 master["ctryyear"] = master["ctrycode"].map(str) + master["year"]
 master.to_csv("latam_tariffs.csv")
+
+# 

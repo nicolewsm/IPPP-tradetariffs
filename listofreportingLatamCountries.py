@@ -29,3 +29,4 @@ latam_fulllist = pd.DataFrame()
 latam_fulllist['ctryname'] = df_region.index.values
 df_latam = latam_fulllist.merge(df2)
 df_latam.to_csv('latamctrycodes_list.csv')
+ 

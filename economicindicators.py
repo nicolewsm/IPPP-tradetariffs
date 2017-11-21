@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import pandas as pd
+import pandas as pd 
 
 files = ["gdp2.csv", "lforce.csv", "unemp.csv", "inflation.csv"]
 indicators = ["gdp", "lforce", "unemp", "inflation"]
