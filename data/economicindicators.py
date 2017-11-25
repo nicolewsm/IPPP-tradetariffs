@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import pandas as pd 
+import pandas as pd
 
 files = ["gdp2.csv", "lforce.csv", "unemp.csv", "inflation.csv"]
 indicators = ["gdp", "lforce", "unemp", "inflation"]
@@ -59,7 +59,7 @@ for file in files:
             master = master.merge(df_current_master).set_index('ctryyear')
 
 #rearranging columns
-master = master[['ctry', 'ctrycode', 'year', 'gdp', 'gdpdelta', 'gdp%change','lforcedelta',
+master = master[['ctry', 'ctrycode', 'year', 'gdp', 'gdpdelta', 'gdp%change', 'lforce', 'lforcedelta',
  'lforce%change', 'unemp', 'unempdelta', 'unemp%change', 'inflation', 'inflationdelta', 'inflation%change']]
 # creating multi index:
 # master.set_index(['ctry', 'year'], inplace=True)

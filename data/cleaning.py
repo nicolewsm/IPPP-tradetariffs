@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import pandas as pd
 
 tariffcols = ['ctryyear', 'All Products_tariff', 'All Products_delta', 'All Products_%change', 'Capital goods_tariff', 'Capital goods_delta',
               'Capital goods_%change', 'Consumer goods_tariff', 'Consumer goods_delta', 'Consumer goods_%change',
@@ -17,7 +18,6 @@ df = df[~(df['year'] == 1996)]
 
 
 ### VERSION 2 - dropping ALL rows with NaN -- 374 observations remains.
-df2 = df.dropna()
-droppedrows2 = df[~df.index.isin(df2.index)]
-df2.to_csv("clean2.csv")
-droppedrows2.to_csv('dropped2.csv')
+df_tariffs3 = df_tariffs.dropna()
+df3 = df_economic.merge(df_tariffs3)
+df3.to_csv("clean_latam.csv")
