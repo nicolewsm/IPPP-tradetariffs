@@ -11,7 +11,6 @@ Datafiles and codes generating them are found in the Data folder.
 
 **Time Periods**: 
 <br>1996 - 2016 (Reporting of tariff data to WTO started only in 1996) 
-<br>
 
 **Economic indicators**: 
 <br>GDP-per-capita growth, unemployment, labor force participation, inflation
@@ -24,6 +23,6 @@ Datafiles and codes generating them are found in the Data folder.
 <br>- Merged to form G7_tariffs.csv and LatAm_master.csv
 
 **Data cleaning**:
-<br>All countries/years that did not have tariff data were dropped.  
-<br>As each economic indicator is separately assessed, we dropped rows for which no data for that indicator was available.  
-<br>The resulting LatAm dataset has 419 observations for gdp, 385 for unemployment and labor force rates, and 408 for inflation.
+<br>All countries/years that did not have tariff data were dropped
+<br>As each economic indicator is separately assessed, we dropped rows for which no data for that indicator was available
+<br>The resulting LatAm dataset has 419 observations for gdp, 385 for unemployment and labor force rates, and 408 for inflation
