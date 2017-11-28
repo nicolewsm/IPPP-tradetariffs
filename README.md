@@ -26,5 +26,5 @@ Datafiles and codes generating them are found in the data folder.
 
 **Data cleaning**:
 <br>Since we are unable to assess effects of tariff changes if no tariffs were reported, all countries/years that did not have tariff data were dropped.
-As each economic indicator is separately assessed, we dropped rows for which no data for that indicator was available
-<br>The resulting LatAm dataset has 419 observations for gdp, 385 for unemployment and labor force rates, and 408 for inflation
+<br>As each economic indicator is separately assessed, we dropped rows for which no data for that indicator was available.
+<br>The resulting LatAm dataset has 419 observations for gdp, 385 for unemployment and labor force rates, and 408 for inflation.
