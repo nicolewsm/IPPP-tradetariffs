@@ -6,7 +6,7 @@ Detailed analysis can be found in the... while a high-level review of our findin
 
 <h2> Data </h2>
 
-Datafiles and codes generating them are found in the data folder.  
+Datafiles and codes generating them are found in the data folder.  Below is a brief description of the data used, and treatment administered.  Since this is a panel dataset, first differences were applied.  
 
 **Source**: 
 <br>World Bank and World Integrated Trade Solution (WITS)
