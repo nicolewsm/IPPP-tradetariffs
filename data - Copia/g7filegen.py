@@ -163,7 +163,7 @@ for countrycode in g7:
 
  df = pd.read_csv("g7_tariffs.csv")
 
- europe = ['FRA', 'GER', 'ITA', 'GBR']
+ europe = ['FRA', 'DEU', 'ITA', 'GBR']
  # to replace EUN with country codes of G7 nations.
  x = 21
  for ctry in europe:
