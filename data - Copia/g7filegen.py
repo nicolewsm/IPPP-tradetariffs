@@ -59,9 +59,8 @@ files = ["gdp2.csv", "lforce.csv", "unemp.csv", "inflation.csv"]
 indicators = ["gdp", "lforce", "unemp", "inflation"]
 indicators_lookup = dict(zip(files, indicators))
 
-file_cols = ["Country Name", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003",
-          "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015",
-          "2016"]
+years = [str(i) for i in range(1996,2017)]
+file_cols = ["Country Name"] + years
 index_col = "Country Name"
 
 
@@ -113,9 +112,8 @@ master = master[['ctry', 'ctrycode', 'year', 'gdp', 'gdpdelta', 'gdp%change', 'l
 master.to_csv('G7_master.csv')
 
 #Generating G7 tariffs CSV
-years = ["1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004",
-        "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013",
-        "2014", "2015", "2016"]
+years = [str(i) for i in range(1996,2017)]
+
 file_cols = ["Product Group"] + years
 index_col = "Product Group"
 
@@ -161,19 +159,5 @@ for countrycode in g7:
 
 
     master = master.append(ctrytariffs)
+master["ctryyear"] = master["countrycode"].map(str) + master["year"]
 master.to_csv("g7_tariffs.csv")
-
-
-df = pd.read_csv("g7_tariffs.csv")
-
-europe = ['FRA', 'GER', 'ITA', 'GBR']
-# to replace EUN with country codes of G7 nations.
-x = 21
-for ctry in europe:
-    y = x + 20
-    df.loc[x:y,'countrycode'] = ctry
-    x += 21
-    
-df['year'] = df['year'].astype(str)
-df["ctryyear"] = df["countrycode"].map(str) + df["year"]
-df.to_csv("g7_tariffs.csv")
