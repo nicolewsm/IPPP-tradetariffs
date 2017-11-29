@@ -157,7 +157,20 @@ for countrycode in g7:
         ctrytariffs[product + '_delta']= delta['delta']
         ctrytariffs[product + '_%change']= percent['%change']
 
-
     master = master.append(ctrytariffs)
-master["ctryyear"] = master["countrycode"].map(str) + master["year"]
-master.to_csv("g7_tariffs.csv")
+ master.to_csv("g7_tariffs.csv")
+
+
+ df = pd.read_csv("g7_tariffs.csv")
+
+ europe = ['FRA', 'GER', 'ITA', 'GBR']
+ # to replace EUN with country codes of G7 nations.
+ x = 21
+ for ctry in europe:
+     y = x + 20
+     df.loc[x:y,'countrycode'] = ctry
+     x += 21
+
+ df['year'] = df['year'].astype(str)
+ df["ctryyear"] = df["countrycode"].map(str) + df["year"]
+ df.to_csv("g7_tariffs.csv")
