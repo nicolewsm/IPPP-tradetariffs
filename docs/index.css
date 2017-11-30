@@ -11,16 +11,30 @@ h1 { color: darkcyan; }
 img {
   border: 10px;
   border-style: solid;
-  border-color: darkred;
+  border-color: darkcyan;
   margin: 0px 40px;
   float: right;
+}
+
+iframe {
+  border: 5px;
+  border-style: solid;
+  border-color: darkcyan;
+  margin: 0px 40px;
+  height: 350px;
+  width: 550px;
+  float: center;
+}
+img.pic{
+	width:200px;
+	height:120px;
 }
 
 table {
   border-width: 0px 0px 5px 0px;
   border-style: solid;
-  border-color: darkred;
-  background: #eee;
+  border-color: darkcyan;
+  background: ivory;
   padding: 0px;
   border-spacing: 0px;
   margin: 10px 30px;
@@ -29,7 +43,7 @@ table {
 
 th {
   color: white;
-  background-color: olive;
+  background-color: darkcyan;
 }
 
 th, td {
@@ -41,7 +55,7 @@ td.trcell, td.facell, td.uicell {
   font-weight: bold;
 }
 
-td.trcell {color: green; }
+td.trcell {color: #6E6E6E; }
 td.facell { color: red;     }
 td.uicell { color: orange; }
 
