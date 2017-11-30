@@ -25,6 +25,9 @@ iframe {
   width: 550px;
   float: center;
 }
+small {
+  margin-left: 3em;
+}
 img.pic{
 	width:200px;
 	height:120px;
@@ -38,6 +41,7 @@ table {
   padding: 0px;
   border-spacing: 0px;
   margin: 10px 30px;
+  width: 900px;
 }
 
 
