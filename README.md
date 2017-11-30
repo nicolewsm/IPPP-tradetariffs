@@ -2,7 +2,7 @@
 <h2> Description and Scope </h2>
 This project studies the consequences of trade policies on economic development, with the aim of determining if there were any differences between the experiences of developed countries and Latin American countries.  Given their different stages of development, we would expect that any changes in tariffs would impact Latin American countries more than developed countries.  Further, we also aim to identify if tariffs in different product classes (e.g. consumer goods or raw materials) would have different impact on economic development.  
 
-Detailed analysis can be found in the... while a high-level review of our findings is available at this link: https://nicolewsm.github.io/IPPP-tradetariffs/docs/index.html.
+Detailed analysis can be found in the... while a high-level review of our findings is available at this link: https://nicolewsm.github.io/IPPP-tradetariffs/docs/index.html
 
 <h2> Data </h2>
 
