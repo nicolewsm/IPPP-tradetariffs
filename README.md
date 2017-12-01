@@ -38,5 +38,5 @@ Taking into account that the effects of tariff changes would take time to manife
 As we observed many data points clustered around zero (i.e. little or no change in tariffs or gdp growth/inflation/unemployment rates), we conducted a second level analysis by considering only changes above a threshold and graphing the changes on a bar chart.  
 
 <h2> Summary of Findings </h2>
-Overall, we did not find significant relationships between the economic indicators and tariff changes.  Nonetheless, it does also imply that tariffs should not be touted as a fix to economic problems.  
+Overall, we did not find significant relationships between the economic indicators and tariff changes, nor any striking differences between the experiences of LatAm and G7 countries.  There was indication that higher tariff on raw materials hurt economic welfare in LatAm countries, but the evidence is weak at best.  Nonetheless, the lack of a definitive conclusion does also imply that even though reducing tariffs may not necessarily improve welfare, increasing tariffs should also not be touted as a fix to economic problems.  
 
