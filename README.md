@@ -2,7 +2,7 @@
 <h2> Description and Scope </h2>
 This project studies the consequences of trade policies on economic development, with the aim of determining if there were any differences between the experiences of developed countries and Latin American countries.  Given their different stages of development, we would expect that any changes in tariffs would impact Latin American countries more than developed countries.  Further, we also aim to identify if tariffs in different product classes (e.g. consumer goods or raw materials) would have different impact on economic development.  <br><br>
 
-Detailed analysis can be found in **analysis_final.py** while a high-level review of our findings is available at this link: https://nicolewsm.github.io/IPPP-tradetariffs/docs/index.html
+Detailed analysis can be found in **Analysis_final.ipynb** while a high-level review of our findings is available at this link: https://nicolewsm.github.io/IPPP-tradetariffs/docs/index.html
 
 <h2> Data </h2>
 
@@ -39,4 +39,3 @@ As we observed many data points clustered around zero (i.e. little or no change 
 
 <h2> Summary of Findings </h2>
 Overall, we did not find significant relationships between the economic indicators and tariff changes, nor any striking differences between the experiences of LatAm and G7 countries.  There was indication that higher tariff on raw materials hurt economic welfare in LatAm countries, but the evidence is weak at best.  Nonetheless, the lack of a definitive conclusion does also imply that even though reducing tariffs may not necessarily improve welfare, increasing tariffs should also not be touted as a fix to economic problems.  
-
