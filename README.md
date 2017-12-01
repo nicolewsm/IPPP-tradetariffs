@@ -18,7 +18,7 @@ Datafiles and codes generating them are found in the data folder.  Below is a br
 <br>GDP-per-capita growth (gpd2.csv), unemployment (unemp.csv), labor force participation (lforce.csv), inflation (inflation.csv)
 <br>- Downloaded directly from the World Bank as csv, treated to generate year-on-year deltas and % changes
 <br>- Merged to form G7_master.csv and LatAm_master.csv
-<br>- Codes for merging data are at G7filegen.py and latamfilegen.py
+<br>- Codes for merging data are at **G7filegen.py** and **latamfilegen.py**
 
 **Tariffs**:
 <br>Most-favored-nations weighted average tariffs for all products, intermediate, capital and consumer goods, and raw materials
