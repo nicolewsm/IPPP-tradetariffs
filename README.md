@@ -24,9 +24,10 @@ Below is a brief description of the data used, and treatment administered.  Sinc
 **Tariffs**:
 <br>Most-favored-nations weighted average tariffs for all products, intermediate, capital and consumer goods, and raw materials
 <br>- Read directly from WITS using pandas, treated to generate year-on-year deltas and % changes
-<br>- Merged to form G7_tariffs.csv and LatAm_master.csv
+<br>- Merged to form G7_tariffs.csv and LatAm_tariffs.csv
 
 **Data cleaning**:
+<br>Merged master and tariff data and cleaned to form clean_g7.csv and clean_latam.csv
 <br>Since we are unable to assess effects of tariff changes if no tariffs were reported, all countries/years that did not have tariff data were dropped.
 <br>As each economic indicator is separately assessed, we dropped rows for which no data for that indicator was available.
 
