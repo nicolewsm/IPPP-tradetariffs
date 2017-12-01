@@ -39,3 +39,7 @@ As we observed many data points clustered around zero (i.e. little or no change 
 
 <h2> Summary of Findings </h2>
 Overall, we did not find significant relationships between the economic indicators and tariff changes, nor any striking differences between the experiences of LatAm and G7 countries.  There was indication that higher tariff on raw materials hurt economic welfare in LatAm countries, but the evidence is weak at best.  Nonetheless, the lack of a definitive conclusion does also imply that even though reducing tariffs may not necessarily improve welfare, increasing tariffs should also not be touted as a fix to economic problems.  
+
+<h2> Students </h2>
+Nicole Wu
+Renata Marinoni Jonczyk
