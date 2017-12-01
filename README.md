@@ -42,4 +42,5 @@ Overall, we did not find significant relationships between the economic indicato
 
 <h2> Students </h2>
 Nicole Wu
+<br>
 Renata Marinoni Jonczyk
