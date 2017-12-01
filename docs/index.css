@@ -6,13 +6,40 @@ body { margin: 0 10%;
   background-color: whitesmoke;
 }
 
+p {text-align:justify
+}
+
 h1 { color: darkcyan; }
 
+h2 { color: #585858; }
+
 img {
-  border: 10px;
+  height: 300px;
+  width: 450px;
+  border: 2px;
   border-style: solid;
   border-color: darkcyan;
   margin: 0px 40px;
+  float: center;
+}
+
+img.right {
+  height: 300px;
+  width: 450px;
+  border: 2px;
+  border-style: solid;
+  border-color: darkcyan;
+  margin: 0px 0px;
+  float: center;
+}
+
+img.map {
+  height: 100px;
+  width: 250px;
+  border: 5px;
+  border-style: solid;
+  border-color: darkcyan;
+  margin-left: 20px;
   float: right;
 }
 
@@ -27,10 +54,6 @@ iframe {
 }
 small {
   margin-left: 3em;
-}
-img.pic{
-	width:200px;
-	height:120px;
 }
 
 table {

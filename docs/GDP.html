@@ -11,12 +11,64 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="GDP.html" class="active">GDP</a></li>
     <li><a href="unemployment.html">Unemployment</a></li>
-    <li><a href="laborforce.html">Labor Force (size)</a></li>
-    <li><a href="price.html">Price of Products</a></li>
+    <li><a href="inflation.html">Inflation</a></li>
   </nav>
 </body>
 
-<h1> Changes in tariffs </h1>
-<h2> Does it affect GDP? </h2>
+<h1> How changes in tariffs affect GDP </h1>
 
-<img src="g7.png"></img>
+<img class="map" src="pics/latam.png"></img>
+<h2> Latin America Countries </h2>
+
+<p>Taking a quick look at the effect of tariffs on the change in GDP-per-capita growth rate, we see that a slight
+negative trend is observed. However, there is heavy clustering of observations around the middle - i.e. points
+where there is both little change in GDP growth rate and tariff changes.
+A regression (see below) of changes in growth rates on tariffs showed no significant results.
+</p>
+<br>
+<img src="pics/latamgdp_allprod.png"></img>
+<img class="right" src="pics/latamgdp_byprod.png"></img>
+<br>
+<p>
+Applying the same approach to sub categories of tariff changes, we found very similar results.
+Overall, there was a large clustering of observations where changes in both GDP growth rate and tariffs were static.
+There were slightly negative relationships between changes in GDP growth rate and all tariff categories, except for raw materials.
+However, our regression found that there is no significant relationship. In fact, as a whole, the low r-squares implied that tariff
+changes had very little association with GDP growth rates.
+</p>
+
+<p>
+  The effects of tariff changes may have been biased downwards, given the substantial clustering of observations around near-zero
+  changes for both GDP growth and tariffs. Therefore, we extended the analysis to consider the effect of larger changes in tariffs and
+  if they are related to more significant changes in growth rate.
+  To do so, we categorized tariffs and growth rates into 3 buckets - increases, decreases and same.
+</p>
+<img src="pics/latamgdp_bar.png"></img>
+
+<p>
+  We can see that decreases in tariffs are associated with cases of increased growth rates and vice versa.
+  This inverse relationship also appears to be stronger for tariff decreases than increases.
+</p>
+
+<img class="map" src="pics/G7.png"></img>
+<h2> G7 Countries </h2>
+
+<p>
+  Repeating the process for G7 countries, we found a similarly weak and negative relationship between tariffs and GDP growth.
+</p>
+<br>
+<img src="pics/g7gdp_byprod.png"></img>
+<img class="right" src="pics/g7gdp_bar.png"></img>
+
+<p>
+  From the graph above, we can see that the effects are consistent with those for LatAm countries, and possibly more pronounced.
+  An interesting observation: if tariffs were kept at relatively constant levels, the likelihood of slowing growth is higher for G7
+  countries vis-a-vis LatAm.
+</p>
+<h2> Conclusion </h2>
+<p>
+  Although we did not observe any significant relationship between tariff changes and GDP growth rates, there was a broad trend across
+  both LatAm and G7 countries that reducing tariffs is more likely to improve GDP growth rates. However, this exercise reminds us that
+  GDP growth is driven by more factors than tariffs alone. Policy makers seeking to improve a country's welfare would be wise to look
+  beyond tariffs, and consider other factors such as productivity.
+</p>
